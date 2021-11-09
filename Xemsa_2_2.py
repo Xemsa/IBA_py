@@ -10,7 +10,7 @@
   *****
 '''
 
-# Простой вариант
+print(" Простой вариант")
 print("    *")
 print("   * *")
 print("  *   *")
@@ -20,15 +20,22 @@ print("  *   *")
 print("  *   *")
 print("  *****")
 
-# С переносами
+print(" С переносами")
 print("    *\n   * *\n  *   *\n *     *\n***   ***\n  *   *\n  *   *\n  *****",sep="\n")
 
-# С разделителем
+print(" С разделителем")
 print("    *","   * *","  *   *"," *     *","***   ***","  *   *","  *   *","  *****",sep="\n")
 
-'''
-n=1;
-print(" "*5*n,"*");
-print(" "*4*n,"*",sep="",end="");print(" "*2*n,"*")
-print(" "*2*n,"*",sep="",end="");print(" "*2*n,"*")
-'''
+print(" Масштабируемый")
+n=3;
+s=" "
+z="*"
+print(s*4*n,z,sep="");
+print(s*3*n,z,sep="",end="");   print(s*((2*n)-1),z,sep="")
+print(s*2*n,z,sep="",end="");   print(s*((4*n)-1),z,sep="")
+print(s*1*n,z,sep="",end="");   print(s*((6*n)-1),z,sep="")
+print(2*(z+s*(n-1)),z,sep="",end=""); print(s*((4*n)-1),2*(z+s*(n-1)),z,sep="")
+print(s*2*n,z,sep="",end="");   print(s*((4*n)-1),z,sep="")
+print(s*2*n,z,sep="",end="");   print(s*((4*n)-1),z,sep="")
+print(s*2*n,z,sep="",end="");   print(z*((4*n)-1),z,sep="")
+
