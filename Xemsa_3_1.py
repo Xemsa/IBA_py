@@ -1,7 +1,8 @@
 #3.1
 #largest of 4
 
-def all2f(n):
+def check():
+    p=input()
     if isinstance(n, int):
         return float(n)
     else:
