@@ -2,7 +2,6 @@
 #repeat
 s = input("целые числа через пробел ")
 bar=list(map(int,s.split(" ")))
-# bar = list(map(int, bar))
 # bar = [ 1, 0, 2, 0, 2,1]
 bar.sort()
 foo=[]
