@@ -2,8 +2,8 @@
 #text file*
 
 from os import strerror
-# fname = input("File name? \n")
-fname ='E:/git/IBA_py/11/file111.txt'
+fname = input("File name? \n")
+
 try:
     fil = open(fname, mode='r', encoding='utf-8')   
 except IOError as e:
